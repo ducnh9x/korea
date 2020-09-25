@@ -18,8 +18,8 @@
             <header class="header">
                 <div class="container-fluid">
                     <div class="header__inner"><a class="header__logo" href="./index.html"><img src="./images/logo.png" alt="" /></a>
-                        <div class="header__widgets">
-                            <div class="header__text">지니야, <span class="header__text-highlight">영어</span> 강의 찾아줘</div>
+                        <div class="h-widget">
+                            <div class="h-widget__text">지니야, <span class="h-widget__text-highlight">영어</span> 강의 찾아줘</div>
                             <ul class="menu">
                                 <li class="menu__item"><a class="menu__link" href="#!">삼각형</a></li>
                                 <li class="menu__item"><a class="menu__link" href="#!">훈민가</a></li>
@@ -28,195 +28,190 @@
                                 <li class="menu__item"><a class="menu__link" href="#!">국제사회</a></li>
                             </ul>
                         </div>
-                        <div class="header__btns">
-                            <div><a class="header__btn" href="#!"><img src="./images/icon-cog.png" alt="" /><span>중등 3학년</span></a><a class="header__btn" href="#!"><img src="./images/icon-user.png" alt="" /><span>마이페이지</span></a></div>
-                            <div><a class="header__btn" href="./7.html"><img src="./images/icon-w.png" alt="" /><span>월정액 신청</span><small>(무료체험 <span class="text-primary">D-14일</span> )</small></a></div>
-                        </div>
+                        <div class="h-btns"><a class="h-btns__item h-btns__item--1" href="#!"><img src="./images/icon-cog.png" alt="" /><span>중등 3학년</span></a><a class="h-btns__item h-btns__item--2" href="#!"><img src="./images/icon-user.png" alt="" /><span>마이페이지</span></a><a class="h-btns__item h-btns__item--3" href="#!"><img src="./images/icon-w.png" alt="" /><span>월정액 신청</span></a><a class="h-btns__item h-btns__item--4" href="#!">(무료체험 <span class="text-primary">D-14일</span> )</a></div>
                     </div>
                 </div>
             </header>
             <div class="page__content">
                 <!-- main content-->
-                <div class="container-fluid">
-                    <nav class="navigation">
-                        <ul class="menu-2">
-                            <li class="menu-2__item"><a class="menu-2__link active" href="#!">국어</a></li>
-                            <li class="menu-2__item"><a class="menu-2__link" href="#!">영어</a></li>
-                            <li class="menu-2__item"><a class="menu-2__link" href="#!">수학</a></li>
-                            <li class="menu-2__item"><a class="menu-2__link" href="#!">사회</a></li>
-                            <li class="menu-2__item"><a class="menu-2__link" href="#!">과학</a></li>
-                            <li class="menu-2__item"><a class="menu-2__link" href="#!">역사</a></li>
-                        </ul>
-                        <div class="navigation__current"><img src="./images/icon-playing.gif" alt=""><span>1강 강의소개 강의 활용법</span></div>
-                    </nav>
-                    <ul class="menu-4">
-                        <li class="menu-4__item"><a class="menu-4__link active" href="#!">공통</a></li>
-                        <li class="menu-4__item"><a class="menu-4__link" href="#!">화법과 작문</a></li>
-                        <li class="menu-4__item"><a class="menu-4__link" href="#!">독서</a></li>
-                        <li class="menu-4__item"><a class="menu-4__link" href="#!">언어와 매체</a></li>
-                        <li class="menu-4__item"><a class="menu-4__link" href="#!">문학</a></li>
+                <nav class="navigation">
+                    <ul class="menu-2">
+                        <li class="menu-2__item"><a class="menu-2__link active" href="#!">국어</a></li>
+                        <li class="menu-2__item"><a class="menu-2__link" href="#!">영어</a></li>
+                        <li class="menu-2__item"><a class="menu-2__link" href="#!">수학</a></li>
+                        <li class="menu-2__item"><a class="menu-2__link" href="#!">사회</a></li>
+                        <li class="menu-2__item"><a class="menu-2__link" href="#!">과학</a></li>
+                        <li class="menu-2__item"><a class="menu-2__link" href="#!">역사</a></li>
                     </ul>
-                    <div class="grid">
-                        <div class="grid__main">
-                            <div class="grid-2">
-                                <div class="lesson is-playing">
-                                    <div class="lesson__body">
-                                        <div class="lesson__title">
-                                            <div>2강</div>
-                                            <div>시의 개념과 특성1</div>
-                                        </div>
-                                        <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                    <div class="navigation__current"><img src="./images/icon-playing.gif" alt=""><span>1강 강의소개 강의 활용법</span></div>
+                </nav>
+                <ul class="menu-4">
+                    <li class="menu-4__item"><a class="menu-4__link active" href="#!">공통</a></li>
+                    <li class="menu-4__item"><a class="menu-4__link" href="#!">화법과 작문</a></li>
+                    <li class="menu-4__item"><a class="menu-4__link" href="#!">독서</a></li>
+                    <li class="menu-4__item"><a class="menu-4__link" href="#!">언어와 매체</a></li>
+                    <li class="menu-4__item"><a class="menu-4__link" href="#!">문학</a></li>
+                </ul>
+                <div class="grid">
+                    <div class="grid__main">
+                        <div class="grid-2">
+                            <div class="lesson is-playing">
+                                <div class="lesson__body">
+                                    <div class="lesson__title">
+                                        <div>2강</div>
+                                        <div>시의 개념과 특성1</div>
                                     </div>
-                                    <div class="lesson__footer">
-                                        <div class="lesson__current"><span class="text-white">11분</span>
-                                            / 18분
-                                        </div>
-                                        <div class="lesson__progress">
-                                            <div class="lesson__progress-inner" style="width: 50%"></div>
-                                        </div>
-                                    </div><a class="lesson__link" href="#!"></a>
+                                    <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
                                 </div>
-                                <div class="lesson">
-                                    <div class="lesson__body">
-                                        <div class="lesson__title">
-                                            <div>2강</div>
-                                            <div>시의 개념과 특성1</div>
-                                        </div>
-                                        <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                                <div class="lesson__footer">
+                                    <div class="lesson__current"><span class="text-white">11분</span>
+                                        / 18분
                                     </div>
-                                    <div class="lesson__footer">
-                                        <div class="lesson__current"><span class="text-white">0분</span>
-                                            / 30분
-                                        </div>
-                                        <div class="lesson__progress">
-                                            <div class="lesson__progress-inner" style="width: 0"></div>
-                                        </div>
-                                    </div><a class="lesson__link" href="#!"></a>
-                                </div>
-                                <div class="lesson">
-                                    <div class="lesson__body">
-                                        <div class="lesson__title">
-                                            <div>2강</div>
-                                            <div>시의 개념과 특성1</div>
-                                        </div>
-                                        <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                                    <div class="lesson__progress">
+                                        <div class="lesson__progress-inner" style="width: 50%"></div>
                                     </div>
-                                    <div class="lesson__footer">
-                                        <div class="lesson__current"><span class="text-white">0분</span>
-                                            / 30분
-                                        </div>
-                                        <div class="lesson__progress">
-                                            <div class="lesson__progress-inner" style="width: 100%"></div>
-                                        </div>
-                                    </div><a class="lesson__link" href="#!"></a>
-                                    <div class="lesson__label">완료</div>
-                                </div>
-                                <div class="lesson">
-                                    <div class="lesson__body">
-                                        <div class="lesson__title">
-                                            <div>2강</div>
-                                            <div>시의 개념과 특성1</div>
-                                        </div>
-                                        <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
-                                    </div>
-                                    <div class="lesson__footer">
-                                        <div class="lesson__current"><span class="text-white">0분</span>
-                                            / 30분
-                                        </div>
-                                        <div class="lesson__progress">
-                                            <div class="lesson__progress-inner" style="width: 0"></div>
-                                        </div>
-                                    </div><a class="lesson__link" href="#!"></a>
-                                </div>
-                                <div class="lesson">
-                                    <div class="lesson__body">
-                                        <div class="lesson__title">
-                                            <div>2강</div>
-                                            <div>시의 개념과 특성1</div>
-                                        </div>
-                                        <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
-                                    </div>
-                                    <div class="lesson__footer">
-                                        <div class="lesson__current"><span class="text-white">0분</span>
-                                            / 30분
-                                        </div>
-                                        <div class="lesson__progress">
-                                            <div class="lesson__progress-inner" style="width: 0"></div>
-                                        </div>
-                                    </div><a class="lesson__link" href="#!"></a>
-                                </div>
-                                <div class="lesson">
-                                    <div class="lesson__body">
-                                        <div class="lesson__title">
-                                            <div>2강</div>
-                                            <div>시의 개념과 특성1</div>
-                                        </div>
-                                        <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
-                                    </div>
-                                    <div class="lesson__footer">
-                                        <div class="lesson__current"><span class="text-white">0분</span>
-                                            / 30분
-                                        </div>
-                                        <div class="lesson__progress">
-                                            <div class="lesson__progress-inner" style="width: 100%"></div>
-                                        </div>
-                                    </div><a class="lesson__link" href="#!"></a>
-                                    <div class="lesson__label">완료</div>
-                                </div>
-                                <div class="lesson">
-                                    <div class="lesson__body">
-                                        <div class="lesson__title">
-                                            <div>2강</div>
-                                            <div>시의 개념과 특성1</div>
-                                        </div>
-                                        <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
-                                    </div>
-                                    <div class="lesson__footer">
-                                        <div class="lesson__current"><span class="text-white">0분</span>
-                                            / 30분
-                                        </div>
-                                        <div class="lesson__progress">
-                                            <div class="lesson__progress-inner" style="width: 0"></div>
-                                        </div>
-                                    </div><a class="lesson__link" href="#!"></a>
-                                </div>
-                                <div class="lesson">
-                                    <div class="lesson__body">
-                                        <div class="lesson__title">
-                                            <div>2강</div>
-                                            <div>시의 개념과 특성1</div>
-                                        </div>
-                                        <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
-                                    </div>
-                                    <div class="lesson__footer">
-                                        <div class="lesson__current"><span class="text-white">0분</span>
-                                            / 30분
-                                        </div>
-                                        <div class="lesson__progress">
-                                            <div class="lesson__progress-inner" style="width: 0"></div>
-                                        </div>
-                                    </div><a class="lesson__link" href="#!"></a>
-                                </div>
+                                </div><a class="lesson__link" href="#!"></a>
                             </div>
-                            <nav class="paging"><a class="paging__btn disabled" href="#!">“이전메뉴”</a><a class="paging__arrow" href="#!"><i class="fa fa-caret-left"></i></a>
-                                <div class="paging__number">1/2</div><a class="paging__arrow" href="#!"><i class="fa fa-caret-right"></i></a><a class="paging__btn" href="#!">“다음메뉴”</a>
-                            </nav>
-                        </div>
-                        <div class="grid__aside">
-                            <section class="aside">
-                                <h2 class="aside__title"><img src="./images/icon-writting.png" alt=""><span>복습하기</span></h2>
-                                <div class="aside__body">
-                                    <ul class="menu-3 menu-3--custom mb-auto">
-                                        <li class="menu-3__item"><a class="menu-3__link active" href="#!"><span>오늘</span></a></li>
-                                        <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>어제</span></a></li>
-                                        <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>수요일</span></a></li>
-                                        <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>화요일</span></a></li>
-                                        <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>월요일</span></a></li>
-                                        <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>일요일</span></a></li>
-                                    </ul>
+                            <div class="lesson">
+                                <div class="lesson__body">
+                                    <div class="lesson__title">
+                                        <div>2강</div>
+                                        <div>시의 개념과 특성1</div>
+                                    </div>
+                                    <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
                                 </div>
-                            </section>
+                                <div class="lesson__footer">
+                                    <div class="lesson__current"><span class="text-white">0분</span>
+                                        / 30분
+                                    </div>
+                                    <div class="lesson__progress">
+                                        <div class="lesson__progress-inner" style="width: 0"></div>
+                                    </div>
+                                </div><a class="lesson__link" href="#!"></a>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson__body">
+                                    <div class="lesson__title">
+                                        <div>2강</div>
+                                        <div>시의 개념과 특성1</div>
+                                    </div>
+                                    <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                                </div>
+                                <div class="lesson__footer">
+                                    <div class="lesson__current"><span class="text-white">0분</span>
+                                        / 30분
+                                    </div>
+                                    <div class="lesson__progress">
+                                        <div class="lesson__progress-inner" style="width: 100%"></div>
+                                    </div>
+                                </div><a class="lesson__link" href="#!"></a>
+                                <div class="lesson__label">완료</div>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson__body">
+                                    <div class="lesson__title">
+                                        <div>2강</div>
+                                        <div>시의 개념과 특성1</div>
+                                    </div>
+                                    <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                                </div>
+                                <div class="lesson__footer">
+                                    <div class="lesson__current"><span class="text-white">0분</span>
+                                        / 30분
+                                    </div>
+                                    <div class="lesson__progress">
+                                        <div class="lesson__progress-inner" style="width: 0"></div>
+                                    </div>
+                                </div><a class="lesson__link" href="#!"></a>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson__body">
+                                    <div class="lesson__title">
+                                        <div>2강</div>
+                                        <div>시의 개념과 특성1</div>
+                                    </div>
+                                    <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                                </div>
+                                <div class="lesson__footer">
+                                    <div class="lesson__current"><span class="text-white">0분</span>
+                                        / 30분
+                                    </div>
+                                    <div class="lesson__progress">
+                                        <div class="lesson__progress-inner" style="width: 0"></div>
+                                    </div>
+                                </div><a class="lesson__link" href="#!"></a>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson__body">
+                                    <div class="lesson__title">
+                                        <div>2강</div>
+                                        <div>시의 개념과 특성1</div>
+                                    </div>
+                                    <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                                </div>
+                                <div class="lesson__footer">
+                                    <div class="lesson__current"><span class="text-white">0분</span>
+                                        / 30분
+                                    </div>
+                                    <div class="lesson__progress">
+                                        <div class="lesson__progress-inner" style="width: 100%"></div>
+                                    </div>
+                                </div><a class="lesson__link" href="#!"></a>
+                                <div class="lesson__label">완료</div>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson__body">
+                                    <div class="lesson__title">
+                                        <div>2강</div>
+                                        <div>시의 개념과 특성1</div>
+                                    </div>
+                                    <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                                </div>
+                                <div class="lesson__footer">
+                                    <div class="lesson__current"><span class="text-white">0분</span>
+                                        / 30분
+                                    </div>
+                                    <div class="lesson__progress">
+                                        <div class="lesson__progress-inner" style="width: 0"></div>
+                                    </div>
+                                </div><a class="lesson__link" href="#!"></a>
+                            </div>
+                            <div class="lesson">
+                                <div class="lesson__body">
+                                    <div class="lesson__title">
+                                        <div>2강</div>
+                                        <div>시의 개념과 특성1</div>
+                                    </div>
+                                    <div class="lesson__icon"><img class="lesson__icon-play" src="./images/icon-play.png" alt="" /><img class="lesson__icon-playing" src="./images/icon-playing.gif" alt="" /></div>
+                                </div>
+                                <div class="lesson__footer">
+                                    <div class="lesson__current"><span class="text-white">0분</span>
+                                        / 30분
+                                    </div>
+                                    <div class="lesson__progress">
+                                        <div class="lesson__progress-inner" style="width: 0"></div>
+                                    </div>
+                                </div><a class="lesson__link" href="#!"></a>
+                            </div>
                         </div>
+                        <nav class="paging"><a class="paging__btn disabled" href="#!">“이전메뉴”</a><a class="paging__arrow" href="#!"><i class="fa fa-caret-left"></i></a>
+                            <div class="paging__number">1/2</div><a class="paging__arrow" href="#!"><i class="fa fa-caret-right"></i></a><a class="paging__btn" href="#!">“다음메뉴”</a>
+                        </nav>
+                    </div>
+                    <div class="grid__aside">
+                        <section class="aside">
+                            <h2 class="aside__title"><img src="./images/icon-writting.png" alt=""><span>복습하기</span></h2>
+                            <div class="aside__body">
+                                <ul class="menu-3 menu-3--custom mb-auto">
+                                    <li class="menu-3__item"><a class="menu-3__link active" href="#!"><span>오늘</span></a></li>
+                                    <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>어제</span></a></li>
+                                    <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>수요일</span></a></li>
+                                    <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>화요일</span></a></li>
+                                    <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>월요일</span></a></li>
+                                    <li class="menu-3__item"><a class="menu-3__link" href="#!"><span>일요일</span></a></li>
+                                </ul>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
