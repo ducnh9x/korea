@@ -1,0 +1,92 @@
+.btn {
+  &-default {
+    border-color: $border-color;
+    background-color: transparent;
+
+    &:hover {
+      border-color: $primary;
+      color: $primary;
+    }
+  }
+
+  &-rounded {
+    border-radius: 18px;
+  }
+
+  &-shine {
+    @include btn("shine");
+  }
+
+  &-fill {
+    @include btn("fill");
+  }
+
+  &-fill.btn-primary {
+    &::before {
+      background-color: $white;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  &-fill.btn-danger {
+    &::before {
+      background-color: $white;
+    }
+
+    &:hover {
+      color: $danger;
+    }
+  }
+
+  &-fill.btn-outline-primary {
+    &::before {
+      background-color: $primary;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $white;
+    }
+  }
+
+  &-fill.btn-outline-danger {
+    &::before {
+      background-color: $danger;
+    }
+
+    &:hover {
+      color: $white;
+      background-color: $white;
+    }
+  }
+
+  &-neon-orange {
+    @include btn-neon("orange");
+  }
+
+  &-neon-green {
+    @include btn-neon("green");
+  }
+
+  &-neon-purple {
+    @include btn-neon("purple");
+  }
+
+  &-neon-blue {
+    @include btn-neon("blue");
+  }
+
+  &-neon-dark {
+    @include btn-neon("dark");
+  }
+}
+
+$rounded-list: 8 10 18 20 22 24 25 26 28 30;
+@each $item in $font-size-list {
+  .rounded-#{$item} {
+    border-radius: #{$item}px;
+  }
+}

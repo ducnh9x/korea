@@ -1,0 +1,152 @@
+.popup {
+  &__content {
+    border-radius: 1rem;
+    background-color: #3f3f3f;
+    padding: 6rem 10rem 7rem;
+  }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 1.3;
+    padding-bottom: 2.4rem;
+    text-align: center;
+    color: $white;
+    border-bottom: 1px solid #545454;
+    margin-bottom: 4rem;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 2.5rem;
+    text-align: center;
+    color: $white;
+    margin-top: 4rem;
+    letter-spacing: -0.2rem;
+
+    table {
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+
+      td {
+        &:first-child {
+          padding-right: 2rem;
+        }
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    min-width: 24rem;
+    border: 0;
+    background: #808080;
+    font-size: 3rem;
+    line-height: 8rem;
+    padding: 0 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: $white;
+    box-shadow: $shadow-dark;
+    border-radius: 4rem;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+
+    &--primary {
+      background-color: $primary;
+      box-shadow: $shadow-orange;
+    }
+  }
+
+  &__header {
+    background-color: $primary;
+    color: $white;
+    margin: -6rem -10rem 4rem;
+    border-radius: 1rem 1rem 0 0;
+    padding: 3rem;
+  }
+
+  &__header-text-1 {
+    font-size: 4.7rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  &__header-text-2 {
+    font-size: 2.5rem;
+    color: #000;
+    text-align: center;
+  }
+
+  &__collapse {
+    font-size: 2.1rem;
+    color: $white;
+    letter-spacing: -0.2rem;
+    position: relative;
+    max-height: 25rem;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 8rem;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      background: linear-gradient(to bottom, transparent, #3f3f3f);
+    }
+
+    &.expand {
+      max-height: unset;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.4rem;
+  }
+
+  &__nav-item {
+    font-size: 2.4rem;
+    color: #999999;
+    transition: 0.4s;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  @media (min-width: 991px) {
+    .modal-dialog {
+      max-width: 75rem;
+    }
+  }
+}

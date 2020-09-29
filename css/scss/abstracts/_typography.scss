@@ -1,0 +1,29 @@
+$times: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: local("NotoSansCJKkr Regular"),
+    url("../fonts/NotoSansCJKkr-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: local("NotoSansCJKkr Medium"),
+    url("../fonts/NotoSansCJKkr-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "NotoSansCJKkr";
+  src: local("NotoSansCJKkr Bold"),
+    url("../fonts/NotoSansCJKkr-Bold") format("opentype");
+  font-weight: 700;
+}
+
+$roboto: "Roboto", sans-serif;
+
+.font-roboto {
+  font-family: $roboto;
+}
